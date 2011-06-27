@@ -5,7 +5,10 @@ def factorial(x):
 		return x * factorial(x-1)
 
 def main():
-	print factorial(5)
+	x = 1
+	while x > 0:
+		x = int(raw_input('enter a number: '))
+		print 'The factorial for this number is %d' % (factorial(x))
 
 if __name__ == "__main__":
 	main()
