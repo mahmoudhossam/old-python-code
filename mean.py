@@ -2,11 +2,9 @@ import sys
 
 def mean(nums):
 	result = 0
-	count = 0
 	for i in nums:
 		result += i
-		count += 1
-	return result / count
+	return result / len(nums) 
 
 def main():
 	list = []
